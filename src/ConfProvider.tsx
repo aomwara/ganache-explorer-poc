@@ -12,10 +12,10 @@ type Conf = {
 
 const defaultConf: Conf = {
   version: VERSION,
-  rpcUrl: 'http://localhost:8545',
+  rpcUrl: 'https://wrnec-mainnet.aomwara.space',
   abis: [erc20],
   addressBook: {
-    '0x90f8bf6a479f320ead074411a4b0e7944ea8c9c1': 'ganache1'
+    '0x152D671b5E858d8039ce1B63FDEd676ac31Ef999': 'DevAccount'
   }
 }
 

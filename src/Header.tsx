@@ -9,20 +9,22 @@ export const Header: React.FC = () => {
     <>
       <AppBar position="fixed">
         <Toolbar>
-          <Box paddingX={1}>
-            <Typography variant="h6">
+        <Box paddingX={1}>
+            <Typography variant="h4">
               <Link component={RouterLink} to="/" color="inherit">
-                Home
+                <b>BxScan</b>
               </Link>
             </Typography>
           </Box>
+          { /* 
           <Box paddingX={1}>
-          <Typography variant="h6">
+          <Typography>
             <Link component={RouterLink} to="/conf" color="inherit">
               Configuration
             </Link>
           </Typography>
           </Box>
+          */}
         </Toolbar>
       </AppBar>
       <Toolbar />
