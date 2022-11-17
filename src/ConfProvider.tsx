@@ -7,16 +7,16 @@ type Conf = {
   version: number
   abis: any[]
   rpcUrl: string
-  addressBook: {[address: string]: string}
+  addressBook: { [address: string]: string }
 }
 
 const defaultConf: Conf = {
   version: VERSION,
-  rpcUrl: 'https://wrnec-mainnet.aomwara.space',
+  rpcUrl: 'https://rpc.darkforest.scb10x.dev',
   abis: [erc20],
   addressBook: {
-    '0x152D671b5E858d8039ce1B63FDEd676ac31Ef999': 'DevAccount'
-  }
+    '0x152D671b5E858d8039ce1B63FDEd676ac31Ef999': 'DevAccount',
+  },
 }
 
 const ConfContext = React.createContext<{ conf: Conf; updateConf: any } | null>(null)
@@ -59,7 +59,7 @@ export const ConfProvider = (props: any) => {
 
   const updateConf = React.useMemo(
     () => (newConf: Partial<Conf>) => {
-      setConf(conf => ({
+      setConf((conf) => ({
         ...conf,
         ...newConf,
       }))
