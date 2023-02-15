@@ -12,7 +12,7 @@ type Conf = {
 
 const defaultConf: Conf = {
   version: VERSION,
-  rpcUrl: 'https://rpc.darkforest.scb10x.dev',
+  rpcUrl: 'https://darkforest.rpcx.network',
   abis: [erc20],
   addressBook: {
     '0x152D671b5E858d8039ce1B63FDEd676ac31Ef999': 'DevAccount',
